@@ -10,7 +10,6 @@ import {
     TouchableOpacity
 } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import StackNavigator from "../navigation/StackNavigator";
 
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
@@ -59,9 +58,9 @@ export default class StoryCard extends Component {
                                     <Text style={styles.storyAuthorText}>{this.props.story.author}</Text>
                                 </View>
                             </View>
-                            <View style={styles.iconContainer}>
+                            {/* <View style={styles.iconContainer}>
                                 <Ionicons name={this.state.speakerIcon} size={30} color={this.state.speakerColor} style={{ width: 30, margin: 15 }} />
-                            </View>
+                            </View> */}
                         </View>
                         <View style={styles.descriptionContainer}>
                             <Text style={styles.descriptionText}>
